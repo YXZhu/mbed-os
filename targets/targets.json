@@ -8705,10 +8705,11 @@
     },
 	"WEFUN_F411CE": {
 	"inherits": ["FAMILY_STM32"],
-	"supported_form_factors": ["ARDUINO", "MORPHO"],
+	"supported_form_factors": ["MORPHO"],
 	"core": "Cortex-M4F",
 	"extra_labels_add": ["STM32F4", "STM32F411xE", "STM32F411CE"],
 	"components_add": ["FLASHIAP"],
+	"detect_code": ["0740"],
 	"config": {
 		"clock_source": {
 			"help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI",
@@ -8722,7 +8723,7 @@
 		"FLASH",
 		"MPU"
 	],
-	"release_versions": ["2", "5"],
+	"release_versions": ["5"],
 	"device_name": "STM32F411CE",
 	"bootloader_supported": true
 	},
